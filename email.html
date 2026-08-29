@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>Verify your Ankom Studios account</title>
+
+<!--[if mso]>
+<noscript>
+  <xml>
+    <o:OfficeDocumentSettings>
+      <o:PixelsPerInch>96</o:PixelsPerInch>
+    </o:OfficeDocumentSettings>
+  </xml>
+</noscript>
+<style>
+  table, td { font-family: Arial, Helvetica, sans-serif !important; }
+</style>
+<![endif]-->
+
+<!--
+  EMAIL HTML — not a normal web page. Two rules that don't apply anywhere
+  else on this site: everything below is table-based (flexbox/grid get
+  stripped by Outlook and a bunch of other clients) and every style that
+  actually matters is inlined on the element itself, not just declared in
+  the <style> block — the block below is a progressive-enhancement layer
+  for clients that keep <head>/<style> (Gmail webmail, Apple Mail, etc.),
+  not the source of truth, since Outlook desktop and a few others strip
+  <head> entirely and only honor inline style="".
+
+  BEFORE THIS ACTUALLY GETS SENT (mailer.js): the logo <img> below points
+  at a relative path (assets/images/header-logo.png) so it renders when
+  you just open this file in a browser to check the design. Email clients
+  can't load "relative to the file" — swap that src for the real, live,
+  absolute URL (e.g. https://ankomstudios.com/assets/images/header-logo.png)
+  once this is live, or the logo will just show as a broken image in every
+  inbox.
+
+  The {{VERIFY_URL}} placeholder is where mailer.js's actual verifyUrl
+  (real token, real expiry) gets substituted in — both places it appears.
+-->
+
+<style>
+  body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+  table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+  img { -ms-interpolation-mode: bicubic; border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+  body { margin: 0; padding: 0; width: 100% !important; height: 100% !important; background-color: #efe9db; }
+
+  a.verify-btn { transition: background-color .15s ease; }
+  a.verify-btn:hover { background-color: #655561 !important; }
+
+  @media screen and (max-width: 600px) {
+    .email-wrapper { width: 100% !important; }
+    .email-content-padding { padding-left: 20px !important; padding-right: 20px !important; }
+    .stack-column { display: block !important; width: 100% !important; }
+  }
+</style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#efe9db;">
+
+  <!-- Preheader — shows in the inbox list next to the subject line, hidden in the actual message body -->
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; font-size:1px; line-height:1px; color:#efe9db;">
+    Confirm your email to finish setting up your Ankom Studios account. This link expires in 24 hours.
+  </div>
+
+  <center style="width:100%; background-color:#efe9db;">
+    <!--[if mso]>
+    <table role="presentation" width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+    <td>
+    <![endif]-->
+
+    <table role="presentation" class="email-wrapper" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="width:600px; max-width:600px; margin:0 auto;">
+
+      <!-- top spacer -->
+      <tr>
+        <td style="padding:40px 0 24px;"></td>
+      </tr>
+
+      <!-- header / logo -->
+      <tr>
+        <td align="center" style="padding-bottom:28px;">
+          <img src="assets/images/header-logo.png" width="200" alt="Ankom Studios" style="display:block; width:200px; max-width:200px; height:auto;">
+        </td>
+      </tr>
+
+      <!-- torn-paper top edge, matching the site's own paper-end art -->
+      <tr>
+        <td style="height:24px; background-color:#2e3234; background-image:url('assets/images/paperEnd.png'); background-repeat:no-repeat; background-size:100% 100%; filter:invert(1); font-size:0; line-height:0;">&nbsp;</td>
+      </tr>
+
+      <!-- main card -->
+      <tr>
+        <td style="background-color:#ffffff;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td class="email-content-padding" style="padding:44px 48px 8px; font-family:Arial, Helvetica, sans-serif;">
+                <h1 style="margin:0 0 16px; font-family:Arial, Helvetica, sans-serif; font-size:22px; line-height:1.3; color:#2e3234; font-weight:700;">
+                  Confirm your email
+                </h1>
+                <p style="margin:0 0 24px; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:1.6; color:#4a4a4a;">
+                  Thanks for signing up for Ankom Studios — the studio behind WannaSmile4Evr, ThawDaBase, and the wider Syndicate &amp; Factionist Revolution lineup. Confirm this is really your email address to finish setting up your account and unlock project downloads.
+                </p>
+              </td>
+            </tr>
+
+            <!-- CTA button -->
+            <tr>
+              <td class="email-content-padding" align="center" style="padding:8px 48px 32px;">
+                <!--[if mso]>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{VERIFY_URL}}" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="0%" fillcolor="#2e3234" stroke="f">
+                <w:anchorlock/>
+                <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">Verify my email</center>
+                </v:roundrect>
+                <![endif]-->
+                <!--[if !mso]><!-->
+                <a class="verify-btn" href="{{VERIFY_URL}}" target="_blank" style="display:inline-block; background-color:#2e3234; color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:16px; font-weight:700; text-decoration:none; padding:14px 40px; border-radius:0;">
+                  Verify my email
+                </a>
+                <!--<![endif]-->
+              </td>
+            </tr>
+
+            <tr>
+              <td class="email-content-padding" style="padding:0 48px 8px; font-family:Arial, Helvetica, sans-serif;">
+                <p style="margin:0 0 8px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:1.6; color:#8a8a8a;">
+                  This link expires in 24 hours. If the button above doesn't work, copy and paste this URL into your browser:
+                </p>
+                <p style="margin:0 0 32px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:1.6; word-break:break-all;">
+                  <a href="{{VERIFY_URL}}" target="_blank" style="color:#7d929e; text-decoration:underline;">{{VERIFY_URL}}</a>
+                </p>
+                <p style="margin:0 0 40px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:1.6; color:#8a8a8a;">
+                  Didn't sign up for Ankom Studios? You can safely ignore this email — no account will be created without confirmation.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- torn-paper bottom edge -->
+      <tr>
+        <td style="height:24px; background-color:#2e3234; background-image:url('assets/images/paperEnd2.png'); background-repeat:no-repeat; background-size:100% 100%; filter:invert(1); font-size:0; line-height:0;">&nbsp;</td>
+      </tr>
+
+      <!-- footer -->
+      <tr>
+        <td style="background-color:#2e3234; padding:28px 40px 36px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td align="center" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:1.7; color:#a9a9a9;">
+                Ankom Studios &mdash; WannaSmile4Evr &middot; ThawDaBase &middot; Syndicate &amp; Factionist Revolution
+                <br>
+                You're receiving this because someone (hopefully you) signed up at
+                <a href="https://ankomstudios.com" target="_blank" style="color:#7d929e; text-decoration:underline;">ankomstudios.com</a>.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- bottom spacer -->
+      <tr>
+        <td style="padding:32px 0 0;"></td>
+      </tr>
+
+    </table>
+
+    <!--[if mso]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </center>
+
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Animated sprite editor &amp; pixel art tool">
+    <meta name="author" content="Igara Studio S.A.">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ankom Studios" />
+    <meta property="og:description" content="Animated sprite editor &amp; pixel art tool" />
+    <meta property="og:image" content="https://ankomstudios.com/assets/images/og-image.png" />
+    <meta property="og:url" content="https://ankomstudios.com">
+
+    <title>Ankom Studios | Home </title>
+    <link rel="shortcut icon" href="assets/images/${faviconTheme}.png">
+
+    <link rel="preload" as="image" href="assets/images/paralaxBg.png" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+
+    <link href="assets/css/fontawesome.min.css" rel="stylesheet">
+    <link href="assets/css/solid.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css?v=40" rel="stylesheet">
+    <script>
+      // Set the theme class immediately (before paint) so the
+      // paper-edge graphics don't flash the wrong color on load.
+      // favicon-theme.js keeps this in sync afterwards.
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('theme-dark');
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"></button>
+          <a class="navbar-brand" href="/" title="Home"><img id="navLogo" src="assets/images/logoPixel.png" alt="Ankom Studios"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="docs-button ">
+              <a href="/docs/"><i class="sprite sprite-docs"></i>&nbsp;Docs</a></li>
+            <li><a href="https://github.com/ankomstudios/ankomstudios/blob/master/CONTRIBUTING.md">&nbsp;Contribute</a></li>
+            <li><a href="https://community.ankomstudios.com/"><i class="sprite sprite-community"></i>&nbsp;Socials</a></li>
+            <li><a href="/support/"><i class="sprite sprite-support"></i>&nbsp;Support</a></li>
+            <li><a href="https://blog.ankomstudios.com/"><i class="sprite sprite-blog"></i>&nbsp;News</a></li>
+            <li><button type="button" class="auth-nav-btn" id="authOpenBtn" data-auth-open>
+                  <i class="sprite sprite-user"></i>&nbsp;Sign Up / Log In</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<div class="top-shadow"></div>
+<div class="header">
+  <div class="header-inner">
+	<div class="container">
+	  <div class="header-logo-wrap" id="headerLogoWrap">
+	    <img class="header-logo" style="width:auto; height:110%;" src="assets/images/header-logo.png" alt="Ankom Studios">
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div id="content-wrapper">
+<div class="paper-end paper-end-top"></div>
+<div id="content">
+
+<img
+  src="assets/images/text/VersionTrailerText.png"
+  alt="VersionTrailerText"
+  class="version-trailer-text"
+/>
+
+<div class="version-previews">
+
+  <!-- Preview 1 -->
+  <div class="version-preview">
+    <iframe
+      width="853"
+      height="480"
+      src="https://www.youtube.com/embed/4emFL4aV9WM?rel=0&amp;showinfo=0"
+      title="Aseprite v1.3 Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <div class="version-buttons">
+      <a href="/buy/windows/versions/" class="btn main-buy-button os-download-btn">
+        <img class="os-logo" src="assets/images/windows-logo.png" alt="Windows">
+        <span class="os-button-text">
+          <span class="os-name">Windows</span>
+          <span class="os-version">v1.0.0</span>
+        </span>
+      </a>
+
+      <a href="/buy/linux/versions/" class="btn main-buy-button os-download-btn">
+        <img class="os-logo" src="assets/images/linux-logo.png" alt="Linux">
+        <span class="os-button-text">
+          <span class="os-name">Linux</span>
+          <span class="os-version">v1.0.0</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+
+  <!-- Preview 2 -->
+  <div class="version-preview">
+    <iframe
+      width="853"
+      height="480"
+      src="https://www.youtube.com/embed/4emFL4aV9WM?rel=0&amp;showinfo=0"
+      title="Aseprite v1.3 Trailer"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+
+    <div class="version-buttons">
+      <a href="/buy/windows/versions/" class="btn main-buy-button os-download-btn">
+        <img class="os-logo" src="assets/images/windows-logo.png" alt="Windows">
+        <span class="os-button-text">
+          <span class="os-name">Windows</span>
+          <span class="os-version">v1.0.0</span>
+        </span>
+      </a>
+
+      <a href="/buy/linux/versions/" class="btn main-buy-button os-download-btn">
+        <img class="os-logo" src="assets/images/linux-logo.png" alt="Linux">
+        <span class="os-button-text">
+          <span class="os-name">Linux</span>
+          <span class="os-version">v1.0.0</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<img
+  src="assets/images/text/AboutAnkomStudios.png"
+  alt="AboutAnkomStudios"
+  class="aboutAnkom-text"
+/>
+
+<div class="container marketing">
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Merch</h2>
+	<div class="featurette-image-placeholder merch-carousel" id="merchCarousel">
+	  <div class="merch-carousel-track">
+		<img class="featurette-image merch-carousel-img is-active" src="assets/images/placeholders/bracelet1.jpg" loading="lazy" alt="Merch preview: bracelet">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/bracelet2.jpg" loading="lazy" alt="Merch preview: bracelet">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/burshka1.jpg" loading="lazy" alt="Merch preview: burshka">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/pants1.jpg" loading="lazy" alt="Merch preview: pants">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/pants2.jpg" loading="lazy" alt="Merch preview: pants">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/pants3.jpg" loading="lazy" alt="Merch preview: pants">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/pants4.jpg" loading="lazy" alt="Merch preview: pants">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/sweater1.jpg" loading="lazy" alt="Merch preview: sweater">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/sweater2.jpg" loading="lazy" alt="Merch preview: sweater">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/sweater3.jpg" loading="lazy" alt="Merch preview: sweater">
+		<img class="featurette-image merch-carousel-img" src="assets/images/placeholders/sweater4.jpg" loading="lazy" alt="Merch preview: sweater">
+	  </div>
+	  <button type="button" class="merch-carousel-btn merch-carousel-prev" aria-label="Previous merch image">&#10094;</button>
+	  <button type="button" class="merch-carousel-btn merch-carousel-next" aria-label="Next merch image">&#10095;</button>
+	</div>
+	<p>Ankom Studios has a wide Variety of <a href="/store/merch/shirts/">Shirts</a>, <a href="/store/merch/pants/">Pants</a>, And other Stylish <a href="/store/merch/accessories/">Accessories</a>, designed for The few that appreciate unique and high-quality clothing/designs.</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Ideology</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/featurettes/ideology.png" loading="lazy"></div>
+	<p>Ankom Studios is driven by a unique ideology that values creativity, quality, and innovation in all our projects.</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Partners</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/featurettes/partners.png" loading="lazy"></div>
+	<p>Our partners collaborate with us to bring innovative and high-quality products to our audience.</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Members</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/playback-modes.gif" loading="lazy"></div>
+	<p>Our members are the backbone of Ankom Studios, Donate to become a member of Ankom Studios. Youll recieve new updates, exclusive content, and the opportunity to actively participate in our creative projects.</p>
+	<p>Membership is a way to support our work and stay connected with the latest developments at Ankom Studios.</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Users</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/onion-skin.gif" loading="lazy"></div>
+	<p>Our users engage with our products and provide valuable feedback to help us improve.</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Founder</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/red-blue.gif" loading="lazy"></div>
+	<p>The founder of Ankom Studios leads the vision and direction of our creative endeavors. Mcmatty Obriore, also known as Rhap5ody/r5dothat$hit! leads more than just AnkomStudios, ThawDaBase, And WannaSmile. Syndicate & the Factionist Revolution is not only backed but also lead by Mcmatty Obriore.</p>
+  </div>
+
+</div>
+</div>
+
+<div class="film-decorator"></div>
+
+<h1 class="features">
+</h1>
+<div class="film-decorator"></div>
+
+<img
+  src="assets/images/text/AboutWannaSmile.png"
+  alt="AboutWannaSmile"
+  class="about-text"
+/>
+
+<div class="container marketing">
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Creation</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/palette-control.gif" loading="lazy"></div>
+	<p>WannaSmile was Created in September 2025. and the latest version is available at <a href="/home/">Ankom Studios</a>!</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Purpose & Use</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/control-alpha.gif" loading="lazy"></div>
+	<p>The purpose of WannaSmile is to provide a distributor network for assets in a expressive web service environment. Usage of WannaSmile includes browsing the catalogue, Exploring projects, And reviewing based on user experience.</p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2>Version History</h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/color-wheel.gif" loading="lazy"></div>
+	<p>Wannasmile has undergone several updates since its creation, with each version bringing new features and improvements to enhance the user experience.</p>
+  </div>
+
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+
+</div>
+</div>
+
+<div class="film-decorator"></div>
+
+<h1 class="features">
+</h1>
+<div class="film-decorator"></div>
+
+<img
+  src="assets/images/text/AboutThawDaBase.png"
+  alt="AboutThawDaBase"
+  class="about-text"
+/>
+
+<div class="container marketing">
+<div class="row">
+
+   <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+    <div class="col-lg-4 col-md-6 col-sm-6">
+	<h2></h2>
+	<div class="featurette-image-placeholder"><img class="featurette-image img-responsive" src="assets/images/shading-mode.gif" loading="lazy"></div>
+	<p></p>
+  </div>
+
+</div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12" style="text-align:center;">
+      <a href="/buy/" class="btn main-buy-button" style="width:260px;"><span>Explore Now</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="paper-end paper-end-bottom"></div>
+</div>
+</div>
+    <div class="film-decorator"></div>
+    <div id="footer">
+    <div class="container">
+
+      <div class="row">
+		<div class="col-xs-offset-0 col-xs-6 col-sm-offset-0 col-sm-4 col-md-offset-1 col-md-2">
+		  <h4>Links</h4>
+		  <ul>
+			<li><a href="/">Home</a>
+			<li><a href="https://github.com/ankomstudios/ankomstudios/issues">Known Issues</a>
+			<li><a href="https://github.com/ankomstudios/ankomstudios/issues/new">Bug Report</a>
+			<li><a href="/contributors/">Contributors</a>
+			<li><a href="/donate/">Donations</a>
+		  </ul>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-2">
+		  <h4>Community</h4>
+		  <ul>
+			<li><a href="https://community.ankomstudios.org/"><i class="fab fa-discourse"></i> Aseprite Community</a>
+			<li><a href="https://discord.gg/Yb2CeX8"><i class="fab fa-discord"></i> Discord Server</a>
+			<li><a href="https://steamcommunity.com/app/431730"><i class="fab fa-steam"></i> Steam Community</a>
+			<li><a href="https://www.reddit.com/r/ankomstudios/"><i class="fab fa-reddit"></i> /r/aseprite</a>
+		  </ul>
+		</div>
+		<div class="col-xs-6 col-sm-4 col-md-2">
+		  <h4>Documentation</h4>
+		  <ul>
+			<li><a href="/quickref/">Quick reference</a></li>
+			<li><a href="/docs/">Docs</a> - <a href="/faq/">FAQ</a></li>
+			<li><a href="/tutorial/">Tutorial</a></li>
+			<li><a href="http://blog.ankomstudios.org/">Blog</a></li>
+		  </ul>
+		</div>
+		<div class="col-xs-offset-0 col-xs-6 col-sm-offset-3 col-sm-3 col-md-offset-0 col-md-2">
+		  <h4>Development</h4>
+		  <ul>
+			<li><a href="https://github.com/ankomstudios/ankomstudios/"><i class="fab fa-github"></i> GitHub</a></li>
+			<li><a href="https://dev.ankomstudios.org/">Devblog</a></li>
+			<li><a href="/roadmap/">Roadmap</a></li>
+			<li><a href="https://github.com/ankomstudios/ankomstudios/blob/master/CONTRIBUTING.md">Contribute</a></li>
+		  </ul>
+		</div>
+		<div class="col-xs-offset-4 col-xs-6 col-sm-offset-0 col-sm-3 col-md-offset-0 col-md-2">
+		  <h4>Social</h4>
+		  <ul>
+			<li><a href="https://twitter.com/ankomstudios/"><i class="fab fa-twitter"></i> Twitter</a>
+			<li><a href="https://mastodon.art/@ankomstudios" rel="me"><i class="fab fa-mastodon"></i> Mastodon</a>
+			<li><a href="https://www.facebook.com/ankomstudios"><i class="fab fa-facebook"></i> Facebook</a>
+			<li><a href="https://www.youtube.com/user/ankomstudios"><i class="fab fa-youtube"></i> YouTube</a>
+			<li><a href="https://www.instagram.com/ankomstudios/"><i class="fab fa-instagram"></i> Instagram</a>
+		  </ul>
+		</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p class="very-bottom">
+&copy; 2001&dash;2026
+<a href="https://ankomstudios.com/">Ankom Studios</a> <span>|</span>
+<a href="https://ankomstudios.com/terms/">Terms of Service</a> <span>|</span>
+<a href="https://ankomstudios.com/privacy/">Privacy</a> <span>|</span>
+<a href="https://ankomstudios.com/support/">Support</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+    </div> <!-- /#footer -->
+
+    <div class="auth-overlay" id="authOverlay" data-auth-close hidden>
+      <div class="auth-modal" role="dialog" aria-modal="true" aria-labelledby="authModalTitle">
+        <button type="button" class="auth-close" data-auth-close aria-label="Close">&times;</button>
+        <h2 class="auth-title" id="authModalTitle">Login/Sign Up</h2>
+
+        <div class="auth-columns">
+          <div class="auth-col">
+            <h3 class="auth-col-title">Log In</h3>
+            <form id="authLoginForm" class="auth-form">
+              <label for="authLoginEmail">email:</label>
+              <input type="email" id="authLoginEmail" name="email" autocomplete="email">
+
+              <label for="authLoginPassword">password:</label>
+              <div class="auth-password-row">
+                <input type="password" id="authLoginPassword" name="password" autocomplete="current-password">
+                <button type="button" class="auth-eye-toggle" data-auth-toggle-pw="authLoginPassword" aria-label="Show password">
+                  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                    <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z" fill="none" stroke="#000" stroke-width="1.6"/>
+                    <circle cx="12" cy="12" r="3.2" fill="none" stroke="#000" stroke-width="1.6"/>
+                  </svg>
+                </button>
+              </div>
+
+              <button type="submit" class="auth-submit">Log In</button>
+            </form>
+          </div>
+
+          <div class="auth-divider" aria-hidden="true"></div>
+
+          <div class="auth-col">
+            <h3 class="auth-col-title">Sign Up</h3>
+            <form id="authSignupForm" class="auth-form">
+              <label for="authSignupEmail">email:</label>
+              <input type="email" id="authSignupEmail" name="email" autocomplete="email">
+
+              <label for="authSignupPassword">Strong Password:</label>
+              <input type="password" id="authSignupPassword" name="password" autocomplete="new-password">
+
+              <button type="submit" class="auth-submit">Sign Up</button>
+            </form>
+
+            <p class="auth-social-label">sign up with Google or Apple</p>
+            <div class="auth-social-row">
+              <button type="button" class="auth-social-btn" data-auth-provider="google" aria-label="Sign up with Google">
+                <svg viewBox="0 0 48 48" width="24" height="24" aria-hidden="true">
+                  <path fill="#4285F4" d="M45.1 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h11.8c-.5 2.8-2.1 5.1-4.4 6.7v5.5h7.1c4.2-3.8 6.6-9.5 6.6-16.2z"/>
+                  <path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.3l-7.1-5.5c-2 1.3-4.5 2.1-7.4 2.1-5.7 0-10.5-3.8-12.2-9H4.5v5.7C8.1 41.1 15.4 46 24 46z"/>
+                  <path fill="#FBBC05" d="M11.8 28.3c-.4-1.3-.7-2.7-.7-4.3s.2-3 .7-4.3v-5.7H4.5C3 16.9 2 20.3 2 24s1 7.1 2.5 10l7.3-5.7z"/>
+                  <path fill="#EA4335" d="M24 10.7c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.2 29.9 2 24 2 15.4 2 8.1 6.9 4.5 14l7.3 5.7c1.7-5.2 6.5-9 12.2-9z"/>
+                </svg>
+              </button>
+              <button type="button" class="auth-social-btn" data-auth-provider="apple" aria-label="Sign up with Apple">
+                <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+                  <path fill="#000" d="M16.365 1.43c0 1.14-.415 2.06-1.244 2.94-.997 1.02-2.19 1.62-3.47 1.52-.09-1.13.41-2.28 1.19-3.06.79-.79 2.15-1.38 3.36-1.4.02.001.163 0 .164 0zm4.4 15.62c-.53 1.22-.79 1.77-1.47 2.85-.95 1.5-2.29 3.38-3.95 3.4-1.48.02-1.86-.96-3.86-.95-2 .01-2.42.97-3.9.95-1.66-.02-2.94-1.7-3.89-3.2-2.67-4.2-2.95-9.13-1.3-11.75 1.16-1.85 3-2.94 4.73-2.94 1.76 0 2.87 1 4.33 1 1.42 0 2.28-1 4.33-1 1.55 0 3.19.85 4.36 2.32-3.83 2.1-3.21 7.56.57 9.32z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/favicon-theme.js"></script>
+    <script src="assets/js/logo-tilt.js"></script>
+    <script src="assets/js/logo-hover-swap.js"></script>
+    <script src="assets/js/paper-parallax.js"></script>
+    <script src="assets/js/auth-modal.js"></script>
+    <script src="assets/js/merch-carousel.js"></script>
+
+
+<script>
+$(function(){
+$('.navbar-toggle').click(function(){
+ var updateParCount = 0;
+ var updateParScroll = setInterval(function(){
+  $(window).trigger('resize').trigger('scroll');
+  updateParCount++;
+  if (updateParCount == 20) {
+   clearInterval(updateParScroll);
+  }
+ },20);
+});
+});
+</script>
+  </body>
+</html>
